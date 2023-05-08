@@ -121,13 +121,3 @@ class Tree:
             else:
                 current = current.right_child
 
-tree = Tree()
-tree.insert(5)
-tree.insert(2)
-tree.insert(7)
-tree.insert(9)
-tree.insert(1)
-
-for i in range(1, 10): 
-    found = tree.search(i) 
-    print("{}: {}".format(i, found))
