@@ -35,3 +35,12 @@ class HashTable:
                 return self.slots[h].value
             h = (h+1) % self.size
         return None
+    
+def hash(name,age,sex):
+    sum = 0
+    for ch in name:
+        sum +=ord(ch) % age
+    sum += ord(sex)
+    return sum % 6
+
+print(hash("staphone", 20, "M"))
